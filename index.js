@@ -4,15 +4,15 @@ var Alexa = require("alexa-sdk");
 
 var handlers = {
   "CheckLevelIntent": function () {
-    this.response.speak("Sara's Love Level is Low"); 
+    this.response.speak("Level is low."); 
     this.emit(':responseReady');
   },
-  "LoveSaraIntent": function () {
-    this.response.speak("Sara's Love Level is completely full."); 
+  "ResetIntent": function () {
+    this.response.speak("Reset to full."); 
     this.emit(':responseReady');
   },
   "LaunchRequest": function () {
-    this.response.speak("We need to keep Sara's love level high!"); 
+    this.response.speak("Welcome to my sample reset app."); 
     this.emit(':responseReady');
   }
 };
